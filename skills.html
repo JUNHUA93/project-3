@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Skills</title>
+
+<meta name="author" content="your name" />
+
+<meta name="description" content="" />
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="css/normalizer.css" >
+
+<style type="text/css">
+
+#onpage{
+
+color:blueviolet;
+
+font-weight: bold;
+
+font-size: 18px;
+
+}
+
+#map {
+
+height: 90%;
+
+width: 90%;
+
+}
+
+html, body {
+
+height: 70%;
+
+width: 70%;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="logo">
+
+<h1>Skills in Computer</h1>
+
+</div>
+
+<div id="content">
+
+<h1>Skills in Computer</h1>
+
+<p><em>MS office 2007-2013</em></p>
+
+<p><em>Java,Web development</em></p>
+
+<p><em>Desktop repair and maintenance</em></p>
+
+<p><em>Basic command for windows </em></p>
+
+<h2>Languages</h2>
+
+<p>Mardian</p>
+
+<p>Cantonese</p>
+
+<p>English</p>
+
+<div id="nav">
+
+<ul>
+
+<li><a href="index.html">Home</a>
+
+<li><a href="me.html">About me</a>
+
+<li><a href="Resume.html">Resume</a>
+
+<li><a href="#" id="onpage">Skills</a>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="map"></div>
+
+<script>
+
+var map;
+
+function initMap() {
+
+var uluru = {lat: -25.363, lng: 131.044};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+
+zoom: 4,
+
+center: uluru
+
+});
+
+var marker = new google.maps.Marker({
+
+position: uluru,
+
+map: map
+
+});
+
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=API_KEYcallback=initMap"
+
+async defer></script>
+
+</body>
+
+</html>
