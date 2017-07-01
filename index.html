@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>ITMD-361 Internet Technologies and Web Design</title>
+
+<link rel="stylesheet" type="text/css" href="css/cssforindex.css" >
+
+<link rel="stylesheet" type="text/css" href="css/normalizer.css" >
+
+<style type="text/css">
+
+#onpage{
+
+color:blueviolet;
+
+font-weight: bold;
+
+font-size: 18px;
+
+}
+
+#map {
+
+height: 90%;
+
+width: 90%;
+
+}
+
+html, body {
+
+height: 70%;
+
+width: 70%;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="logo">
+
+<h1>Dong's Project2</h1>
+
+</div>
+
+</div>
+
+<div id="content">
+
+<h1>Home</h1>
+
+<p>Name: Junhua Dong</p>
+
+<h2>Project Description</h2>
+
+<p>This project will develop project 1 from adding Css file.</p>
+
+<h3>Project Goals</h3>
+
+<ul>
+
+<li>
+
+Use the Css Style to perfect the HTML-5 pages
+
+</li>
+
+<li>
+
+Use HTML validator to assure compliance
+
+</li>
+
+<li>
+
+Tracking, developing of the whole project several time and communicate with others in Basecamp to made it better.
+
+</li>
+
+</ul>
+
+</div>
+
+<div id="nav">
+
+<ul>
+
+<li><a href="#" id="onpage">Home</a>
+
+<li><a href="me.html">About me</a>
+
+<li><a href="Resume.html">Resume</a>
+
+<li><a href="skills.html">Skills</a>
+
+</ul>
+
+</div>
+
+<div id="map"></div>
+
+<script>
+
+var map;
+
+function initMap() {
+
+var uluru = {lat: -25.363, lng: 131.044};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+
+zoom: 4,
+
+center: uluru
+
+});
+
+var marker = new google.maps.Marker({
+
+position: uluru,
+
+map: map
+
+});
+
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"
+
+async defer></script>
+
+</body>
+
+</html>
