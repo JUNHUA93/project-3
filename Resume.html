@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Resume</title>
+
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css" > -->
+
+<style type="text/css">
+
+#onpage{
+
+color:blueviolet;
+
+font-weight: bold;
+
+font-size: 18px;
+
+}
+
+#map {
+
+height: 90%;
+
+width: 90%;
+
+}
+
+html, body {
+
+height: 70%;
+
+width: 70%;
+
+margin: 0;
+
+padding: 0;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Resume</h1>
+
+<div id="resume">
+
+<h2>Personal information</h2>
+
+<p>Junhua Dong</p>
+
+<p>3541 S. PARNELL Ave, Apt D, Chicago, IL 60609 | 5406273344 | jdong22@hawk@hawk.iit.edu</p>
+
+<h3>Education</h3>
+
+<p>
+
+Professional Bachelor Degree in Information Technology and Management
+
+</p>
+
+<p>
+
+<strong>Illinois Institute of Technology</strong>, Chicago, IL
+
+</p>
+
+</p>
+
+<p>
+
+Jan. 2017 – present
+
+</p>
+
+<h4>Working Experience</h4>
+
+<p>I have worked for half year as a builder in China after graduated from high school in 2012. During those five years in USA, I have tried three different jobs:</p>
+
+<p>Moving worker, Laberor, and waiter in downton of Chicago. I helped several of my friend to fix their desktop last two years.</p>
+
+<p>Also, I have help my wife to make a video for her first job last year</p>
+
+<object width="425" height="344" data="https://www.youtube.com/embed/xQqPp12rmHo"></object>
+
+<p></p>
+
+</div>
+
+<div id="nav">
+
+<ul>
+
+<li><a href="index.html">Home</a>
+
+<li><a href="me.html">About me</a>
+
+<li><a href="#" id="onpage">Resume</a>
+
+<li><a href="skills.html">Skills</a>
+
+</ul>
+
+</div>
+
+<div id="map"></div>
+
+<script>
+
+var map;
+
+function initMap() {
+
+var uluru = {lat: -25.363, lng: 131.044};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+
+zoom: 4,
+
+center: uluru
+
+});
+
+var marker = new google.maps.Marker({
+
+position: uluru,
+
+map: map
+
+});
+
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=your_api_key&callback=initMap"
+
+async defer></script>
+
+</body>
+
+</html>
