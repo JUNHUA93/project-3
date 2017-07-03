@@ -79,35 +79,23 @@ Tracking, developing of the whole project several time and communicate with othe
 <div id="map"></div>
 
 <script>
-
 var map;
-
 function initMap() {
-
 var uluru = {lat: 23.1291100, lng: 113.2643850};
-
 var map = new google.maps.Map(document.getElementById('map'), {
-
 zoom: 4,
-
 center: uluru
-
 });
-
 var marker = new google.maps.Marker({
-
 position: uluru,
-
 map: map
-
 });
-
 }
-
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-5R0RhIYQnq6YVj0d2ZpGM88IVfx5Ac&callback=initMap"
-    async defer></script>
+<script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-5R0RhIYQnq6YVj0d2ZpGM88IVfx5Ac&callback=initMap">
+</script>
 
 </body>
 </html>
