@@ -25,27 +25,6 @@ font-weight: bold;
 font-size: 18px;
 
 }
-
-#map {
-
-height: 90%;
-
-width: 90%;
-
-}
-
-html, body {
-
-height: 70%;
-
-width: 70%;
-
-margin: 0;
-
-padding: 0;
-
-}
-
 </style>
 
 </head>
@@ -99,40 +78,6 @@ padding: 0;
 </div>
 
 </div>
-
-<div id="map"></div>
-
-<script>
-
-var map;
-
-function initMap() {
-
-var uluru = {lat: -25.363, lng: 131.044};
-
-var map = new google.maps.Map(document.getElementById('map'), {
-
-zoom: 4,
-
-center: uluru
-
-});
-
-var marker = new google.maps.Marker({
-
-position: uluru,
-
-map: map
-
-});
-
-}
-
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=API_KEYcallback=initMap"
-
-async defer></script>
 
 </body>
 
